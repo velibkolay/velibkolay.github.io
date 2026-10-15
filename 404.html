@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex">
 <script>
   // Old project paths that moved: /desktop-lyrics/<rest> → /lyricopter/<rest> (path, query, hash kept).
-  var MOVED = { 'desktop-lyrics': 'lyricopter', 'dl-rename-probe': 'dl-rename-probe-2' };
+  var MOVED = { 'desktop-lyrics': 'lyricopter' };
   var m = location.pathname.match(/^\/([^\/]+)(\/.*)?$/);
   if (m && MOVED.hasOwnProperty(m[1])) {
     location.replace('https://velibkolay.github.io/' + MOVED[m[1]] + (m[2] || '/') + location.search + location.hash);
